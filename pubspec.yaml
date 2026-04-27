@@ -1,0 +1,54 @@
+name: water_reminder_app
+description: "A Flutter water reminder app with local-first storage and Firebase sync."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+isar_version: &isar_version 3.1.0+1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Firebase (BoM 4.12.0 compatible)
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  cloud_firestore: ^6.3.0
+
+  # Local Databases
+  isar: *isar_version
+  isar_flutter_libs: *isar_version
+  sqflite: ^2.4.2
+  path: ^1.9.0
+  path_provider: ^2.1.5
+
+  # State Management
+  provider: ^6.1.2
+
+  # Notifications
+  flutter_local_notifications: ^18.0.0
+  timezone: ^0.9.4
+
+  # Connectivity
+  connectivity_plus: ^6.1.4
+
+  # UI
+  fl_chart: ^0.70.2
+  percent_indicator: ^4.2.3
+  google_fonts: ^6.2.1
+  intl: ^0.20.2
+  shared_preferences: ^2.3.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  isar_generator: *isar_version
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
